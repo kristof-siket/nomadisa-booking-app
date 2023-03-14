@@ -1,0 +1,30 @@
+{
+    "trips": [
+        {
+            "id": 1,
+            "title": "Trip 1",
+            "description": "This is trip 1.",
+            "date": "2023-04-01",
+            "slots": 5,
+            "attendees": []
+        },
+        {
+            "id": 2,
+            "title": "Trip 2",
+            "description": "This is trip 2.",
+            "date": "2023-04-15",
+            "slots": 10,
+            "attendees": []
+        },
+        {
+            "id": 3,
+            "title": "Trip 3",
+            "description": "This is trip 3.",
+            "date": "2023-05-01",
+            "slots": 3,
+            "attendees": []
+        }
+    ]
+}
+  
+  
