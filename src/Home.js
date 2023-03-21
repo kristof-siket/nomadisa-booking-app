@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BookNowModal from './BookNowModal';
+import tripsData from './data.json'
 
 
 
@@ -43,15 +43,11 @@ function Home() {
     });
       
     useEffect(() => {
-        axios.get('http://localhost:5000/trips')
-          .then(response => {
-            setTrips(response.data);
-            setIsLoading(false);
-          })
-          .catch(error => {
-            console.log(error);
-            setIsLoading(false);
-          });
+        setIsLoading(true)
+        setTimeout(() => {
+          setTrips(tripsData.trips)
+          setIsLoading(false);
+        }, 1000)
       }, []);
 
     return (
