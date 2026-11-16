@@ -1,0 +1,10 @@
+// use prisma-8
+
+model Trip {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  date        Date
+  slots       Int
+  attendees   String[]
+}
